@@ -1,0 +1,261 @@
+* {
+  background-color: whitesmoke;
+  color: #231F20;
+  font-family: "San Francisco", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.4px;s
+}
+a,p,h1,h2,i,b,div {
+  background-color: inherit;
+}
+body {
+  margin: 0;
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  text-align: center;
+  z-index: 1;
+}
+h1 {
+  display: inline-block;
+  border-left: 1px solid grey;
+  padding-left: 20px;
+  font-family: "Apple Chancery", cursive;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: 0.1px;
+  line-height: 42px;
+}
+i {
+  padding-right: 15px;
+}
+#left {
+  background-color: white;
+  width: 33%;
+  margin: auto;
+}
+#middle {
+  background-color: white;
+  width: 33%;
+  margin: auto;
+  padding-top: 30px;
+}
+#header input[type="text"] {
+  text-align: center;
+  height: 20px;
+  width: 210px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: silver;
+  border-width: 0.5px;
+}
+#header input[type="text"]:focus {
+  outline: none;
+  text-align: left;
+  background-color: white;
+}
+#header input[type="text"]::placeholder {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  color: silver;
+  font-size: 12px;
+}
+#right {
+  background-color: white;
+  width: 33%;
+  margin: auto;
+  padding-top: 20px;
+}
+.column {
+  float: left;
+}
+#column-wrapper {
+  width: 902px;
+  margin: auto;
+}
+#posts {
+  margin-top: 138px;
+}
+.post {
+  border: 1px solid lightgrey;
+  background-color: white;
+  line-height: 5px;
+  width: 600px;
+  margin-bottom: 60px;
+
+}
+.profile-username {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+#my-profile-pic img {
+  background-color: white;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  height: 30px;
+}
+#instagram-profile-pic img{
+  background-color: white;
+  height: 37px;
+  padding-left: 6px;
+  padding-top: 7px;
+  padding-right: 10px;
+  float: left;
+}
+.posted-pic img {
+  width: 600px;
+}
+.posted-pic {
+  margin-bottom: 10px;
+}
+.fa-heart {
+  padding-left: 10px;
+}
+.fa-comment {
+  padding-right: 0;
+}
+.fa-bookmark {
+  float: right;
+}
+.likes-and-comments{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.likes {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.view {
+  color: grey;
+  padding-bottom: 5px;
+}
+.likes-and-comments a {
+  color: #2c508a;
+  text-decoration: none;
+}
+#comment-heart, #comment-heart-1, #comment-heart-2 {
+  float: right;
+  padding: 0;
+  color: silver;
+}
+.post .time-stamp {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+hr {
+  border-color: whitesmoke;
+  border-width: 0.5px;
+}
+p input[type="text"] {
+  width: 540px;
+  border: none;
+  background-color: inherit;
+  padding-left: 10px;
+}
+p input[type="text"]:focus {
+  outline: none;
+}
+p input[type="text"]::placeholder {
+  color: silver;
+}
+.comment-box {
+  color: lightblue;
+}
+#sidebar {
+  position: sticky;
+  top: 138px;
+  margin-top: 138px;
+  width: 275px;
+}
+#my-profile-pic-2 img {
+  height: 50px;
+  float: left;
+  padding-right: 10px;
+}
+.username {
+  font-weight: bold;
+}
+#me {
+  line-height: 5px;
+}
+#name {
+  color: grey;
+  font-size: 11.5px;
+}
+#stories-box {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  height: 250px;
+  overflow: scroll;
+}
+#suggestions-box {
+  height: 200px;
+}
+.title {
+  float: left;
+  font-weight: bold;
+  color: grey;
+}
+.all {
+  text-align: right;
+  font-weight: bold;
+  font-size: 12px;
+}
+.sticky {
+  /* position: fixed; */
+  width: 250px;
+}
+#stories, #suggestions {
+  margin-top: 32px;
+}
+#stories img {
+  height: 42px;
+  float: left;
+}
+.story-text {
+  display: inline;
+}
+#stories .time-stamp {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 10px;
+}
+.follow-button{
+  float: right;
+}
+.sidebar-box {
+  border: 1px solid lightgrey;
+  background-color: white;
+  line-height: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 1000px) {
+  #sidebar{
+    display: none;
+  }
+  #column-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+}
+@media screen and (max-height: 500px) {
+  #sidebar{
+    display: none;
+  }
+  #column-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+}

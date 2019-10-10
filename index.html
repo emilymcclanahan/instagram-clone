@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"  type="text/css">
+    <meta charset="utf-8">
+    <title>Instagram Clone</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="column"  id="left">
+        <i class="fab fa-instagram fa-2x"></i>
+        <h1>Instagram</h1>
+      </div>
+      <div class="column" id="middle">
+          <input type="text" id="search-box" placeholder="&#xf002;  Search">
+      </div>
+      <div class="column" id="right">
+        <i class="far fa-compass fa-2x"></i>
+        <i class="far fa-heart fa-2x"></i>
+        <i class="far fa-user fa-2x"></i>
+      </div>
+    </div>
+    <div id="column-wrapper">
+      <div class="column" id="posts">
+        <div class="post">
+          <div id="my-profile-pic">
+              <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.32.24%20AM.png" alt="em.cclanahan's profile picture">
+          </div>
+          <p class=profile-username>em.cclanahan<p>
+          <div class="posted-pic">
+            <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Image-1.jpg" alt="em.cclanahan's post">
+          </div>
+          <i class="far fa-heart fa-2x"></i>
+          <i class="far fa-comment fa-2x fa-flip-horizontal"></i>
+          <i class="far fa-bookmark fa-2x"></i>
+          <div class="likes-and-comments">
+            <p class="likes">416 likes</p>
+            <p><b>em.cclanahan</b> Newest additions to the fam !!</p>
+            <p class="view">View all 47 comments</p>
+            <i id=comment-heart-1 class="far fa-heart"></i>
+            <p class="comment"><b>instagram</b> Soooo cute!!!!</p>
+            <i id=comment-heart-2 class="far fa-heart"></i>
+            <p class="comment"><b>em.cclanahan</b> Thank you! <a href="#instagram.com/instagram">@instagram</a>
+            <p class="time-stamp">4 hours ago</p>
+          </div>
+            <hr>
+            <p class="comment-box"><input type="text" name="comment" placeholder="Add a comment...">Post</p>
+        </div>
+        <div class="post">
+          <div id="instagram-profile-pic">
+            <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%201.06.22%20AM.png" alt="instagram's profile picture">
+          </div>
+          <p class=profile-username>instagram<p>
+          <div class="posted-pic">
+            <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/doggo-post.png" alt="instagram's post">
+          </div>
+          <i class="far fa-heart fa-2x"></i>
+          <i class="far fa-comment fa-2x fa-flip-horizontal"></i>
+          <i class="far fa-bookmark fa-2x"></i>
+          <div class="likes-and-comments">
+            <p class="likes">817,280 likes</p>
+            <p>instagram Today's <a href="https://www.instagram.com/explore/tags/weeklyfluff/">#weeklyfluff</a> is Harlso (<a href="instagram.com/harlso_the_balancing_hound">@harlso_the_balancing_hound</a>)</p>
+            <p class="view">View all 7,751 comments</p>
+            <i id=comment-heart class="far fa-heart"></i>
+            <p class="comment"><b>instagram_critic</b> You really should post more pics of <a href="insagram.com/em.cclanahan">@em.cclanahan</a></p>
+            <p class="time-stamp">6 hours ago</p>
+          </div>
+          <hr>
+          <p class="comment-box"><input type="text" name="comment" placeholder="Add a comment...">Post</p>
+        </div>
+      </div>
+      <div class=column id="sidebar">
+        <div id="my-profile-pic-2">
+            <img src="circle-cropped.png" alt="em.cclanahan's profile picture">
+        </div>
+        <div id="me">
+          <p class=username>em.cclanahan</p>
+          <p id="name">Emily McClanahan</p>
+        </div>
+        <div class=sidebar-box id="stories-box">
+          <div class="sticky">
+            <p class="title">Stories</p>
+            <p class="all">Watch All</p>
+          </div>
+          <div id="stories">
+            <div class="story">
+              <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.33.42%20PM.png" alt="bullyrazzis's profile picture">
+            <div class="story-text">
+              <p class=username>bullyrazzis</p>
+              <p class=time-stamp>44 minutes ago</p>
+            </div>
+          </div>
+            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.38.51%20PM.png" alt="frenchierazzis's profile picture">
+            <p class=username>frenchierazzis</p>
+            <p class=time-stamp>50 minutes ago</p>
+            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.38.21%20PM.png" alt="harlso_the_balancing_hound's profile picture">
+            <p class=username>harlso_the_balancing_hound</p>
+            <p class=time-stamp>1 hour ago</p>
+            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.39.50%20PM.png" alt="dog_feelingsig's profile picture">
+            <p class=username>dog_feelingsig</p>
+            <p class=time-stamp>2 hours ago</p>
+            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.40.46%20PM.png" alt="weratedogs's profile picture">
+            <p class="username">weratedogs</p>
+            <p class=time-stamp>5 hours ago</p>
+          </div>
+        </div>
+        <div class=sidebar-box id="suggestions-box">
+          <div class="sticky">
+            <p class="title">Suggestions For You<p>
+            <p class="all">See All</p>
+          </div>
+          <div id="suggestions">
+            <p class="follow-button">Follow</p>
+            <p class=username>doggosdoingthings</p>
+            <p>Followed by bullyrazzis...</p>
+            <p class="follow-button">Follow</p>
+            <p class=username>puppypartiesnyc</p>
+            <p>Followed by bullyrazzis...</p>
+            <p class="follow-button">Follow</p>
+            <p class=username>dog</p>
+            <p>Followed by bullyrazzis...</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://www.instagram.com/about/us/">About us</a>
+          <a href="#https://help.instagram.com/">Support</a> •
+          <a href="#https://instagram-press.com/">Press</a> •
+          <a href="#https://www.instagram.com/developer/">API</a> •
+          <a href="#https://www.instagram.com/about/jobs/">Jobs</a> •
+          <a href="#https://help.instagram.com/519522125107875">Privacy</a> •
+          <a href="#https://help.instagram.com/581066165581870">Terms</a> •
+          <a href="#https://www.instagram.com/explore/locations/">Directory</a> •
+          <a href="#https://www.instagram.com/directory/profiles/">Profiles</a> •
+          <a href="#https://www.instagram.com/directory/hashtags/">Hashtags</a> •
+          <a href="#">LANGUAGE</a>
+          <p>@2019 Instagram</p>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>
