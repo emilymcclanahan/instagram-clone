@@ -3,9 +3,9 @@
   color: #231F20;
   font-family: "San Francisco", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.4px;s
+  letter-spacing: 0.4px;
 }
-a,p,h1,h2,i,b,div {
+a,p,h1,h2,i,b,div,img {
   background-color: inherit;
 }
 body {
@@ -19,16 +19,19 @@ body {
   border-bottom: 1px solid lightgrey;
   text-align: center;
   z-index: 1;
+  padding-bottom: 21px;
 }
-h1 {
+#instagram-logo {
+  display: inline-block;
+  vertical-align: super;
+}
+#header img{
   display: inline-block;
   border-left: 1px solid grey;
-  padding-left: 20px;
-  font-family: "Apple Chancery", cursive;
-  font-weight: 800;
-  font-size: 25px;
-  letter-spacing: 0.1px;
-  line-height: 42px;
+  margin-top: 20px;
+  padding-left: 15px;
+  height: 35px;
+  vertical-align: sub;
 }
 i {
   padding-right: 15px;
@@ -70,15 +73,19 @@ i {
   margin: auto;
   padding-top: 20px;
 }
+.fa-user {
+  margin-left: 15px;
+}
 .column {
   float: left;
 }
 #column-wrapper {
-  width: 902px;
+  width: 907px;
   margin: auto;
+  display: flex;
 }
 #posts {
-  margin-top: 138px;
+  margin-top: 135px;
 }
 .post {
   border: 1px solid lightgrey;
@@ -86,16 +93,15 @@ i {
   line-height: 5px;
   width: 600px;
   margin-bottom: 60px;
-
 }
 .profile-username {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 13.5px;
+  padding-bottom: 13.5px;
   font-weight: 700;
 }
 #my-profile-pic img {
   background-color: white;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 10px;
   padding-left: 10px;
   float: left;
@@ -105,8 +111,8 @@ i {
   background-color: white;
   height: 37px;
   padding-left: 6px;
-  padding-top: 7px;
-  padding-right: 10px;
+  padding-top: 11px;
+  padding-right: 7px;
   float: left;
 }
 .posted-pic img {
@@ -150,7 +156,7 @@ i {
   color: grey;
   font-size: 10px;
   padding-top: 5px;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
 }
 hr {
   border-color: whitesmoke;
@@ -161,6 +167,7 @@ p input[type="text"] {
   border: none;
   background-color: inherit;
   padding-left: 10px;
+  height: 25px;
 }
 p input[type="text"]:focus {
   outline: none;
@@ -172,10 +179,12 @@ p input[type="text"]::placeholder {
   color: lightblue;
 }
 #sidebar {
+  margin-top: 121px;
+  margin-left: 30px;
+}
+#stickybar {
   position: sticky;
-  top: 138px;
-  margin-top: 138px;
-  width: 275px;
+  top: 105px;
 }
 #my-profile-pic-2 img {
   height: 50px;
@@ -187,6 +196,10 @@ p input[type="text"]::placeholder {
 }
 #me {
   line-height: 5px;
+  margin-bottom: 30px;
+}
+#me .username {
+  padding-top: 12px;
 }
 #name {
   color: grey;
@@ -194,44 +207,73 @@ p input[type="text"]::placeholder {
 }
 #stories-box {
   margin-top: 30px;
+  padding-top: 7px;
   padding-bottom: 10px;
-  height: 250px;
-  overflow: scroll;
+  height: 205px;
+  overflow-y: scroll;
+  width: 255px;
 }
 #suggestions-box {
-  height: 200px;
+  height: 192px;
 }
 .title {
   float: left;
   font-weight: bold;
   color: grey;
 }
+
 .all {
-  text-align: right;
+  float: right;
   font-weight: bold;
   font-size: 12px;
 }
-.sticky {
-  /* position: fixed; */
-  width: 250px;
+
+#stories-box {
+  margin-top: 15px;
 }
 #stories, #suggestions {
-  margin-top: 32px;
+  margin-top: 28px;
+}
+.story {
+  display: inline-block;
 }
 #stories img {
   height: 42px;
   float: left;
 }
 .story-text {
-  display: inline;
+  float: left;
+  margin-left: 10px;
+  line-height: 3px;
+}
+.story {
+  margin-top: 7px;
 }
 #stories .time-stamp {
   text-transform: uppercase;
   color: grey;
   font-size: 10px;
 }
-.follow-button{
+#suggestions-box {
+  padding-top: 10px;
+}
+.suggestion {
+  margin-top: 25px;
+}
+#suggestions img {
+  height: 37px;
+  float: left;
+  padding-right: 10px;
+}
+.follow-button {
+  color: dodgerblue;
+  font-weight: bold;
   float: right;
+  font-size: 12px;
+}
+.followed-by {
+  color: grey;
+  font-size: 11.7px;
 }
 .sidebar-box {
   border: 1px solid lightgrey;
@@ -240,6 +282,12 @@ p input[type="text"]::placeholder {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 14px;
+}
+nav a, nav p{
+  color: silver;
+  text-decoration: none;
+  font-size: 10.5px;
+  line-height: 18px;
 }
 @media screen and (max-width: 1000px) {
   #sidebar{

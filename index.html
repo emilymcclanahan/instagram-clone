@@ -9,8 +9,10 @@
   <body>
     <div id="header">
       <div class="column"  id="left">
-        <i class="fab fa-instagram fa-2x"></i>
-        <h1>Instagram</h1>
+        <div id="instagram-logo">
+          <i class="fab fa-instagram fa-2x"></i>
+        </div>
+        <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%202.50.37%20PM.png" alt="instagram-title">
       </div>
       <div class="column" id="middle">
           <input type="text" id="search-box" placeholder="&#xf002;  Search">
@@ -71,71 +73,100 @@
         </div>
       </div>
       <div class=column id="sidebar">
-        <div id="my-profile-pic-2">
-            <img src="circle-cropped.png" alt="em.cclanahan's profile picture">
-        </div>
-        <div id="me">
-          <p class=username>em.cclanahan</p>
-          <p id="name">Emily McClanahan</p>
-        </div>
-        <div class=sidebar-box id="stories-box">
-          <div class="sticky">
+        <div id="stickybar">
+          <div id="my-profile-pic-2">
+              <img src="circle-cropped.png" alt="em.cclanahan's profile picture">
+          </div>
+          <div id="me">
+            <p class=username>em.cclanahan</p>
+            <p id="name">Emily McClanahan</p>
+          </div>
+          <div class=sidebar-box id="stories-box">
             <p class="title">Stories</p>
             <p class="all">Watch All</p>
-          </div>
-          <div id="stories">
-            <div class="story">
-              <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.33.42%20PM.png" alt="bullyrazzis's profile picture">
-            <div class="story-text">
-              <p class=username>bullyrazzis</p>
-              <p class=time-stamp>44 minutes ago</p>
+            <br>
+            <div id="stories">
+              <div class="story">
+                <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.33.42%20PM.png" alt="bullyrazzis's profile picture">
+              <div class="story-text">
+                <p class=username>bullyrazzis</p>
+                <p class=time-stamp>44 minutes ago</p>
+              </div>
+            </div>
+              <div class="story">
+                <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.38.51%20PM.png" alt="frenchierazzis's profile picture">
+                <div class="story-text">
+                  <p class=username>frenchierazzis</p>
+                  <p class=time-stamp>50 minutes ago</p>
+                </div>
+              </div>
+              <div class="story">
+                <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.38.21%20PM.png" alt="harlso_the_balancing_hound's profile picture">
+                <div class="story-text">
+                  <p class=username>harlso_the_balancing_hound</p>
+                  <p class=time-stamp>1 hour ago</p>
+                </div>
+              </div>
+              <br>
+              <div class="story">
+                <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.39.50%20PM.png" alt="dog_feelingsig's profile picture">
+                <div class="story-text">
+                  <p class=username>dog_feelingsig</p>
+                  <p class=time-stamp>2 hours ago</p>
+                </div>
+              </div>
+              <br>
+              <div class="story">
+                <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.40.46%20PM.png" alt="weratedogs's profile picture">
+                <div class="story-text">
+                  <p class="username">weratedogs</p>
+                  <p class=time-stamp>5 hours ago</p>
+                </div>
+              </div>
             </div>
           </div>
-            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.38.51%20PM.png" alt="frenchierazzis's profile picture">
-            <p class=username>frenchierazzis</p>
-            <p class=time-stamp>50 minutes ago</p>
-            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.38.21%20PM.png" alt="harlso_the_balancing_hound's profile picture">
-            <p class=username>harlso_the_balancing_hound</p>
-            <p class=time-stamp>1 hour ago</p>
-            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.39.50%20PM.png" alt="dog_feelingsig's profile picture">
-            <p class=username>dog_feelingsig</p>
-            <p class=time-stamp>2 hours ago</p>
-            <img class="story-pic" src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%2012.40.46%20PM.png" alt="weratedogs's profile picture">
-            <p class="username">weratedogs</p>
-            <p class=time-stamp>5 hours ago</p>
-          </div>
-        </div>
-        <div class=sidebar-box id="suggestions-box">
-          <div class="sticky">
-            <p class="title">Suggestions For You<p>
+          <div class=sidebar-box id="suggestions-box">
             <p class="all">See All</p>
+            <p class="title">Suggestions For You<p>
+            <br>
+            <div id="suggestions">
+              <div class="suggestion">
+                <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%206.30.03%20PM.png" alt="doggosbeingdoggos's profile picture">
+                <p class="follow-button">Follow</p>
+                <p class=username>doggosbeingdoggos</p>
+                <p class="followed-by">Followed by bullyrazzis...</p>
+              </div>
+              <div class="suggestion">
+                <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%206.39.38%20PM.png" alt="mayapolarbear's profile picture">
+                <p class="follow-button">Follow</p>
+                <p class=username>mayapolarbear</p>
+                <p class="followed-by">Followed by bullyrazzis...</p>
+              </div>
+              <div class="suggestion">
+                <img src="file:///Users/Emily/Documents/CSE%20204/05-instagram-clone-emilymcclanahan/Screen%20Shot%202019-10-10%20at%206.39.03%20PM.png" alt="dog's profile picture">
+                <p class="follow-button">Follow</p>
+                <p class=username>dog</p>
+                <p class="followed-by">Followed by bullyrazzis...</p>
+              </div>
+              </div>
           </div>
-          <div id="suggestions">
-            <p class="follow-button">Follow</p>
-            <p class=username>doggosdoingthings</p>
-            <p>Followed by bullyrazzis...</p>
-            <p class="follow-button">Follow</p>
-            <p class=username>puppypartiesnyc</p>
-            <p>Followed by bullyrazzis...</p>
-            <p class="follow-button">Follow</p>
-            <p class=username>dog</p>
-            <p>Followed by bullyrazzis...</p>
-          </div>
+          <nav>
+            <p>
+            <a href="https://www.instagram.com/about/us/">About us</a>
+            <a href="#https://help.instagram.com/">Support</a> •
+            <a href="#https://instagram-press.com/">Press</a> •
+            <a href="#https://www.instagram.com/developer/">API</a> •
+            <a href="#https://www.instagram.com/about/jobs/">Jobs</a> •
+            <a href="#https://help.instagram.com/519522125107875">Privacy</a> •
+            <a href="#https://help.instagram.com/581066165581870">Terms</a> •
+            <a href="#https://www.instagram.com/explore/locations/">Directory</a> •
+            <a href="#https://www.instagram.com/directory/profiles/">Profiles</a> •
+            <a href="#https://www.instagram.com/directory/hashtags/">Hashtags</a> •
+            <a href="#">LANGUAGE</a>
+            </p>
+            <p>© 2019 INSTAGRAM</p>
+          </nav>
         </div>
-        <nav>
-          <a href="https://www.instagram.com/about/us/">About us</a>
-          <a href="#https://help.instagram.com/">Support</a> •
-          <a href="#https://instagram-press.com/">Press</a> •
-          <a href="#https://www.instagram.com/developer/">API</a> •
-          <a href="#https://www.instagram.com/about/jobs/">Jobs</a> •
-          <a href="#https://help.instagram.com/519522125107875">Privacy</a> •
-          <a href="#https://help.instagram.com/581066165581870">Terms</a> •
-          <a href="#https://www.instagram.com/explore/locations/">Directory</a> •
-          <a href="#https://www.instagram.com/directory/profiles/">Profiles</a> •
-          <a href="#https://www.instagram.com/directory/hashtags/">Hashtags</a> •
-          <a href="#">LANGUAGE</a>
-          <p>@2019 Instagram</p>
-        </nav>
       </div>
     </div>
   </body>
