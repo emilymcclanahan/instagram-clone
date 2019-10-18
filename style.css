@@ -23,7 +23,7 @@ body {
 }
 #instagram-logo {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: super;
 }
 #header img{
   display: inline-block;
